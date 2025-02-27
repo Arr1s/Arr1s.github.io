@@ -1,0 +1,83 @@
+/* body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 270vh;
+}
+
+/* test hoofd 1 */
+div {
+    position: absolute;
+    background-color: red;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    animation: move linear both;
+    animation-timeline: scroll();
+    animation-range: 0vh 200vh;
+    z-index: 1;
+}
+
+/* svg */
+svg:nth-of-type(1) {
+    position: relative;
+    z-index: 0;
+    margin: 2em;
+}
+
+/* animatie hoofdje */
+@keyframes move {
+    0% {
+        top: 6;
+        left: 0;
+    }
+    2% {
+        top: 6;
+        left: .5;
+    }
+    10% {
+        top: 103.45;
+        left: .5;
+    }
+    12% {
+        top: 103.45;
+        left: 13.5vw;
+    }
+    25% {
+        top: 137.5vh;
+        left: 13.5vw;
+    }
+    30% {
+        top: 137.5vh;
+        left: 18vw;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+polyline:nth-of-type(1) {
+    fill: none;
+    stroke: black;
+    position: relative;
+}
+
+polyline:nth-of-type(2) {
+    position: absolute;
+    fill: none;
+    stroke: blue;
+/* Stroke-dasharray property */
+    stroke-dasharray: 1353px;
+    stroke-dashoffset: 1353px;
+    animation: moving 3s linear infinite;   
+    animation-fill-mode: forwards;
+    z-index: 2;
+}
+
+@keyframes moving {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}

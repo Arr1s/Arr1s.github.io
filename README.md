@@ -23,7 +23,24 @@ Ik ben aardig onderweg... denk ik... hoop ik...
 # Bronnen
 ## Inception
 * https://inception.fandom.com/wiki/City_(dream) 
-
+* https://nl.wikipedia.org/wiki/Inception
+* https://inception.fandom.com/wiki/Inception_Wiki
 
 ## Code
-### Offset
+### CSS Motion Path
+* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_motion_path 
+* https://developer.mozilla.org/en-US/docs/Web/CSS/offset-distance
+* https://developer.mozilla.org/en-US/docs/Web/CSS/offset-position
+
+### Stroke 
+* https://developer.mozilla.org/en-US/docs/Web/CSS/stroke 
+* https://developer.mozilla.org/en-US/docs/Web/CSS/stroke-dasharray
+* https://developer.mozilla.org/en-US/docs/Web/CSS/stroke-dashoffset
+* https://developer.mozilla.org/en-US/docs/Web/CSS/stroke-linecap
+* https://developer.mozilla.org/en-US/docs/Web/CSS/stroke-width
+
+### Custom properties
+* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascading_variables/Using_CSS_custom_properties 
+* https://developer.mozilla.org/en-US/docs/Web/CSS/--*
+* https://codepen.io/shooft/pen/ZEMWOPj
+

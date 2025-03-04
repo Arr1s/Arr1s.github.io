@@ -1,83 +1,189 @@
+html {
+    --colorLine: blue;
+}
+
+
+/***************************************************************
+These styles are subject to the license agreement(s) provided when you purchased the license(s).
+
+	https://store.typenetwork.com/cart/eula/type-network
+
+***************************************************************/
+
+.bagatellevariable {
+    font-family: "Bagatelle Variable";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.leatherlight {
+    font-family: "Leather Lt";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.leatherregular {
+    font-family: "Leather Reg";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.kōsetsuincised {
+    font-family: "Kōsetsu Incised";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.kōsetsuoutline {
+    font-family: "Kōsetsu Outline";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.kōsetsusolid {
+    font-family: "Kōsetsu Solid";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.kōsetsugrid {
+    font-family: "Kōsetsu Grid";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+h1 {
+    font-family: "Bagatelle Variable";
+    animation: infinite 10s title;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes title {
+    0% {
+        font-variation-settings: "STCK" 1, "BLLS" 1;
+        letter-spacing: normal;
+    }
+    50% {
+        font-variation-settings: "STCK" 1000, "BLLS" 650;
+        letter-spacing: 0.05em;
+    }
+    100% {
+        font-variation-settings: "STCK" 1, "BLLS" 1;
+        letter-spacing: normal;
+    }
+}
+
+h2 {
+    font-family: "Leather Reg";
+}
+
+
+
+
+
+
+
+
+
 /* body */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    height: 270vh;
-}
-
-/* test hoofd 1 */
-div {
-    position: absolute;
-    background-color: red;
-    height: 2em;
-    width: 2em;
-    border-radius: 50%;
-    animation: move linear both;
-    animation-timeline: scroll();
-    animation-range: 0vh 200vh;
-    z-index: 1;
+    background: rgb(241,252,255);
+background-image: linear-gradient(180deg, rgba(241,252,255,1) 0%, rgba(174,198,199,1) 50%, rgba(71,99,99,0.9990589985994398) 99%);
+background-repeat: no-repeat;
+background-attachment: fixed;
 }
 
 /* svg */
 svg:nth-of-type(1) {
-    position: relative;
+    position: absolute;
     z-index: 0;
-    margin: 2em;
+    padding: 2em;
 }
 
 /* animatie hoofdje */
 @keyframes move {
-    0% {
-        top: 6;
-        left: 0;
-    }
-    2% {
-        top: 6;
-        left: .5;
-    }
-    10% {
-        top: 103.45;
-        left: .5;
-    }
-    12% {
-        top: 103.45;
-        left: 13.5vw;
-    }
-    25% {
-        top: 137.5vh;
-        left: 13.5vw;
-    }
-    30% {
-        top: 137.5vh;
-        left: 18vw;
-    }
-    100% {
-        top: 0;
-        left: 0;
+    to {
+        offset-distance: 100%;
     }
 }
 
 polyline:nth-of-type(1) {
     fill: none;
-    stroke: black;
-    position: relative;
-}
-
-polyline:nth-of-type(2) {
-    position: absolute;
-    fill: none;
     stroke: blue;
 /* Stroke-dasharray property */
-    stroke-dasharray: 1353px;
-    stroke-dashoffset: 1353px;
-    animation: moving 3s linear infinite;   
-    animation-fill-mode: forwards;
-    z-index: 2;
+stroke-dasharray: 2100;
+stroke-dashoffset: 2100;
 }
 
 @keyframes moving {
-    100% {
-        stroke-dashoffset: 0;
+    to {
+        stroke-dashoffset: 0%;
     }
 }
+
+
+/* Hoofd test SVG */
+svg:nth-of-type(2) {
+    position: absolute;
+    z-index: 2;
+    padding: 2em;
+    overflow: visible;
+}
+
+svg:nth-of-type(2) polyline {
+    fill: none;
+    stroke: red;
+    stroke-linecap: round;
+ 
+
+/* Stroke-dasharray property */
+stroke-dasharray: 1 2100;
+stroke-dashoffset: 2100;
+stroke-width: 1em;
+    z-index: 2;
+}
+
+/* container SVG's */
+section {
+    position: relative;
+
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+    flex-direction: column;
+    align-items: center;
+}
+
+:has(#Start:checked) polyline:nth-of-type(1) {
+    animation: moving 40s linear forwards infinite; 
+}
+
+:popover-open {
+    margin: 2em;
+    backdrop-filter: blur(10px);
+
+}
+
+:popover-open::backdrop {
+    background-image: url(/images/backgroundimage.jpeg);
+    filter: blur(2px);
+}
+
+

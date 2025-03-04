@@ -17,3 +17,8 @@ Ik heb mijn concept dus rond weten te krijgen, en heb ik een kleine start gemaak
 
 ### Conclusie
 Ik ben aardig onderweg... denk ik... hoop ik... 
+
+## Week 2
+
+# Bronnen
+

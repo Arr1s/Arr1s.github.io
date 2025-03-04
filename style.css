@@ -3,6 +3,10 @@ html {
     --colorHead: red;
     --colorLineYusuf: yellow; 
     --colorHeadYusuf: gold;
+    --colorLineArthur: darkred;
+    --colorHeadArthur: crimson;
+    --colorLineEames: lightgreen;
+    --colorHeadEames: green;
 }
 
 
@@ -88,7 +92,7 @@ h1 {
 h2 {
     font-family: "Leather Reg";
     grid-area: 1 / 1 / 1 / 4;
-    border: solid 3px green;
+    /* border: solid 3px green; */
     text-align: center;
 }
 
@@ -152,7 +156,7 @@ stroke-dashoffset: 2100;
 
 /* Hoofd test SVG */
 
-svg:nth-of-type(2) polyline {
+svg:nth-of-type(5) polyline {
     stroke: var(--colorHead);
     stroke-linecap: round;
  
@@ -165,7 +169,7 @@ stroke-width: 1em;
 }
 
 
-svg:nth-of-type(3) polyline {
+svg:nth-of-type(2) polyline {
     stroke: var(--colorLineYusuf);
     /* Stroke-dasharray property */
     stroke-dasharray: 970;
@@ -173,7 +177,7 @@ svg:nth-of-type(3) polyline {
     z-index: 0;
 }
 
-svg:nth-of-type(4) polyline {
+svg:nth-of-type(6) polyline {
     stroke: var(--colorHeadYusuf);
     stroke-linecap: round;
  
@@ -184,6 +188,44 @@ stroke-dashoffset: 970;
 stroke-width: 1em;
     z-index: 2;
 }
+
+
+svg:nth-of-type(3) polyline {
+    stroke: var(--colorLineArthur);
+    /* Stroke-dasharray property */
+    stroke-dasharray: 1350;
+    stroke-dashoffset:1350;
+    z-index: 0;
+}
+
+svg:nth-of-type(7) polyline {
+    stroke: var(--colorHeadArthur);
+    stroke-linecap: round;
+/* Stroke-dasharray property */
+stroke-dasharray: 1 1350;
+stroke-dashoffset: 1350;
+stroke-width: 1em;
+    z-index: 2;
+}
+
+svg:nth-of-type(4) polyline {
+    stroke: var(--colorLineEames);
+    /* Stroke-dasharray property */
+    stroke-dasharray: 1750;
+    stroke-dashoffset:1750;
+    z-index: 0;
+}
+
+svg:nth-of-type(8) polyline {
+    stroke: var(--colorHeadEames);
+    /* Stroke-dasharray property */
+    stroke-dasharray: 1 1750;
+    stroke-dashoffset: 1750;
+    stroke-width: 1em;
+    stroke-linecap: round;
+    z-index: 2;
+}
+
 
 
 /* container SVG's */
@@ -201,7 +243,7 @@ article {
     z-index: 3;
     max-width: 55%;
     margin-left:3em;
-    border: solid 3px pink;
+    /* border: solid 3px pink; */
     grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -223,7 +265,12 @@ article svg {
     width: 20%;
     border: blue solid 3px;
     margin: 0;
-    animation: forwards infinite 4s flyingPlane;
+}
+
+article:nth-of-type(2) svg {
+    grid-area: 2 / 3 / 2 / 4;
+    border: blue solid 3px;
+    width: 100%;
 }
 
 @keyframes flyingPlane {

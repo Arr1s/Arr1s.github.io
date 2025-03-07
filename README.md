@@ -46,6 +46,7 @@ Hierna was ik begonnen met proberen de lijnen in 3D te zetten, maar dit begon vr
 * https://inception.fandom.com/wiki/City_(dream) 
 * https://nl.wikipedia.org/wiki/Inception
 * https://inception.fandom.com/wiki/Inception_Wiki
+* https://screenrant.com/inception-movie-levels-dream-layers-how-many-explained/
 
 ## Code
 ### CSS Motion Path

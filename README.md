@@ -41,6 +41,9 @@ Toen had ik het idee om de andere tijdlijnen van de personages toe te voegen, en
 
 Hierna was ik begonnen met proberen de lijnen in 3D te zetten, maar dit begon vrij veel met de verhouding van de lijnen te schuiven, dus besloot ik dat nog maar even links te laten liggen en op een later punt daarop terug te komen.
 
+### Conclusie
+- Betere styling, fonts per niveau aanpassen gebaseerd op droom, lijnen 3D maken
+
 # Bronnen
 ## Inception
 * https://inception.fandom.com/wiki/City_(dream) 

@@ -276,29 +276,22 @@ svg {
     transform: rotateY(3deg);
 }
 
-/* animatie hoofdje */
-polyline:nth-of-type(1) {
+/* animatie lijn 1 */
+svg:nth-of-type(1) polyline {
     stroke: var(--colorLine);
 
     /* Stroke-dasharray property */
     stroke-dasharray: var(--stroke);
     stroke-dashoffset: var(--stroke);
-    z-index: var(--Line);
 }
-
-/* Hoofd test SVG */
-
-svg:nth-of-type(5) polyline {
+svg:nth-of-type(1) polyline:nth-of-type(2) {
     stroke: var(--colorHead);
     stroke-linecap: round;
- 
-    /* Stroke-dasharray property */
     stroke-dasharray: 0.1 var(--stroke);
-    stroke-dashoffset: var(--stroke);
     stroke-width: 1em;
-    z-index: var(--Head);
 }
 
+/* animatie lijn 2 */
 svg:nth-of-type(2) polyline {
     stroke: var(--colorLineYusuf);
 
@@ -306,21 +299,17 @@ svg:nth-of-type(2) polyline {
     stroke-dasharray: var(--stroke);
     stroke-dashoffset: var(--stroke);
     transform: translateX(0.6em) translateY(-0.6em);
-    z-index: var(--Line);
 }
 
-svg:nth-of-type(6) polyline {
+svg:nth-of-type(2) polyline:nth-of-type(2) {
     stroke: var(--colorHeadYusuf);
     stroke-linecap: round;
 
-    /* Stroke-dasharray property */
     stroke-dasharray: 0.1 var(--stroke);
-    stroke-dashoffset: var(--stroke);
     stroke-width: 1em;
-    transform: translateX(0.6em) translateY(-0.6em);
-    z-index: var(--Head);
 }
 
+/* animatie lijn 3 */
 svg:nth-of-type(3) polyline {
     stroke: var(--colorLineArthur);
 
@@ -328,21 +317,18 @@ svg:nth-of-type(3) polyline {
     stroke-dasharray: var(--stroke);
     stroke-dashoffset:var(--stroke);
     transform: translateX(0.4em) translateY(-0.4em);
-    z-index: var(--Line);
 }
 
-svg:nth-of-type(7) polyline {
+svg:nth-of-type(3) polyline:nth-of-type(2) {
     stroke: var(--colorHeadArthur);
     stroke-linecap: round;
 
     /* Stroke-dasharray property */
     stroke-dasharray: 0.1 var(--stroke);
-    stroke-dashoffset: var(--stroke);
     stroke-width: 1em;
-    transform: translateX(0.4em) translateY(-0.4em);
-    z-index: var(--Head);
 }
 
+/* animatie lijn 4 */
 svg:nth-of-type(4) polyline {
     stroke: var(--colorLineEames);
 
@@ -350,22 +336,19 @@ svg:nth-of-type(4) polyline {
     stroke-dasharray: var(--stroke);
     stroke-dashoffset:var(--stroke);
     transform: translateX(0.2em) translateY(-0.2em);
-    z-index: var(--Line);
 }
 
-svg:nth-of-type(8) polyline {
+svg:nth-of-type(4) polyline:nth-of-type(2) {
     stroke: var(--colorHeadEames);
 
     /* Stroke-dasharray property */
     stroke-dasharray: 0.1 var(--stroke);
-    stroke-dashoffset: var(--stroke);
     stroke-width: 1em;
     stroke-linecap: round;
-    transform: translateX(0.2em) translateY(-0.2em);
-    z-index: var(--Head);
 }
 
-:has(#Start:checked) polyline:nth-of-type(1) {
+
+:has(#Start:checked) polyline {
     animation: moving 40s linear forwards infinite; 
 }
 

@@ -44,6 +44,13 @@ Hierna was ik begonnen met proberen de lijnen in 3D te zetten, maar dit begon vr
 ### Conclusie
 - Betere styling, fonts per niveau aanpassen gebaseerd op droom, lijnen 3D maken
 
+## Week 3
+
+### Proces
+Fonts toegevoegd, Grid toegevoegd met les van Nils.
+Mijn eerste oplossing was om een RotateY(45deg) te maken, daarna met een transform op alle SVG's individueel apart te zetten, en daarna met een ScaleX(1.4) voor de breedte te compenseren. Echter bracht dit vele performance issues mee, en kwam Nils Binder uiteindelijk met A, een betere symmantisch, perfomance en visuele manier van de 3D lijnen.
+Perspective op de section gestopt, want zonder section kan je geen 3D transform maken. Een rotateY(4deg) op de SVG's gestopt en de trasnforms laten staan. Daarnaast een "pathLength" toegevoegd, daarmee kan je eigenlijk zeggen, deze lijn die in werkelijkheid 1357 pixels is, staat nu gelijk aan 100. Dit hielp met alle berekeningen van zowel de path als de custom properties te vereenvoudigen. 
+
 # Bronnen
 ## Inception
 * https://inception.fandom.com/wiki/City_(dream) 

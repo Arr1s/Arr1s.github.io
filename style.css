@@ -231,50 +231,45 @@ article {
     text-align: center;
     container-type: inline-size;
     container-name: --dreams;
+    & div {
+        align-items: center;
+    }
+    & p {
+        grid-area: summary;
+        &:nth-of-type(2) {
+            grid-area: objective;
+        }
+    }
+    & button {
+        grid-area: readmore;
+        color: blue;
+    }
+    & svg {
+        stroke: black;
+        grid-area: 1 / 1 / 1 / 4;
+        width: 20%;
+        margin: 0;
+    }
+    &:nth-of-type(2) svg {
+        grid-area: 2 / 3 / 2 / 4;
+        width: 100%;
+    }
+    &:nth-of-type(2) h3 {
+        font-family: "Urban Jungle DEMO";
+        font-size: clamp(0.3em, 5cqi, 2em);
+    }
+    & h3 {
+        grid-area: objectiveTitle;
+        z-index: 3;
+        font-family: "topgun";
+        font-size: clamp(0.1em, 4cqi, 1.5em);
+        margin: 0;
+        text-align: start;
+    }
 }
 
-article div {
-    align-items: center;
-}
 
-article p {
-    grid-area: summary;
-}
 
-article p:nth-of-type(2) {
-    grid-area: objective;
-}
-
-article button {
-    grid-area: readmore;
-    color: blue;
-}
-
-article svg {
-    stroke: black;
-    grid-area: 1 / 1 / 1 / 4;
-    width: 20%;
-    margin: 0;
-}
-
-article:nth-of-type(2) svg {
-    grid-area: 2 / 3 / 2 / 4;
-    width: 100%;
-}
-
-article h3 {
-    grid-area: objectiveTitle;
-    z-index: 3;
-    font-family: "topgun";
-    font-size: clamp(0.1em, 4cqi, 1.5em);
-    margin: 0;
-    text-align: start;
-}
-
-article:nth-of-type(2) h3 {
-    font-family: "Urban Jungle DEMO";
-    font-size: clamp(0.3em, 5cqi, 2em);
-}
 
 article:nth-of-type(3) h3 {
     font-family: "Amsterdam";
@@ -512,4 +507,13 @@ svg g:nth-of-type(4) polyline:nth-of-type(2){
         ". readmore .";
         align-items: center;
     }
+}
+
+footer {
+    position: relative;
+}
+
+footer ul {
+    position: fixed;
+    
 }

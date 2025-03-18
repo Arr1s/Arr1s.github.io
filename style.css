@@ -15,11 +15,6 @@ html {
     --colorLineEames: lightgreen;
     --colorHeadEames: green;
 
-    --grid-size: max(calc(100% / var(--grid-max-columns) - var(--grid-gap)), var(--grid-min-size));
-    --grid-max-columns: 3;
-    --grid-gap: 1rem;
-    --grid-min-size: 9em;
-
     --shadowside-filter-right: brightness(80%);
     --shadowside-filter-left: brightness(90%);
 
@@ -416,104 +411,74 @@ body {
 
 /* svg */
 svg {
+    position: absolute;
     z-index: 0;
     padding: 0 1em;
     fill: none;
+    margin-top: 20vh;
     overflow: visible;
     height: max-content;
+    transform: rotateY(3deg);
+
+    /* animatie lijn 1 */
+    & g:nth-of-type(1) polyline {
+        stroke: var(--colorLine);
+        stroke-dasharray: var(--stroke);
+        stroke-dashoffset: var(--stroke);
+        &&:nth-of-type(2) {
+            stroke: var(--colorHead);
+            stroke-linecap: round;
+            stroke-dasharray: 0.1 var(--stroke);
+            stroke-width: var(--strokeWidthHead);
+        }
+    }
+    
+    /* animatie lijn 2 */   
+    & g:nth-of-type(2) polyline{
+        stroke: var(--colorLineYusuf);
+        stroke-dasharray: var(--stroke);
+        stroke-dashoffset: var(--stroke);
+        transform: translateX(0.6em) translateY(-0.6em);
+        &&:nth-of-type(2) {
+            stroke: var(--colorHeadYusuf);
+            stroke-linecap: round;
+            stroke-dasharray: 0.1 var(--stroke);
+            stroke-width: var(--strokeWidthHead);
+        }
+    }
+
+    /* animatie lijn 3 */   
+    & g:nth-of-type(3) polyline {
+        stroke: var(--colorLineArthur);
+        stroke-dasharray: var(--stroke);
+        stroke-dashoffset:var(--stroke);
+        transform: translateX(0.4em) translateY(-0.4em);
+        &&:nth-of-type(2) {
+            stroke: var(--colorHeadArthur);
+            stroke-linecap: round;
+            stroke-dasharray: 0.1 var(--stroke);
+            stroke-width: var(--strokeWidthHead);
+        }
+    }
+
+    /* animatie lijn 4 */
+    & g:nth-of-type(4) polyline {
+        stroke: var(--colorLineEames);
+        stroke-dasharray: var(--stroke);
+        stroke-dashoffset:var(--stroke);
+        transform: translateX(0.2em) translateY(-0.2em);
+        &&:nth-of-type(2){
+            stroke: var(--colorHeadEames);
+            stroke-dasharray: 0.1 var(--stroke);
+            stroke-width: var(--strokeWidthHead);
+            stroke-linecap: round;
+        }
+    }
 }
 
-/* animatie lijn 1 */
-svg g:nth-of-type(1) polyline {
-    stroke: var(--colorLine);
-
-    /* Stroke-dasharray property */
-    stroke-dasharray: var(--stroke);
-    stroke-dashoffset: var(--stroke);
-    z-index: var(--Line);
-}
-svg g:nth-of-type(1) polyline:nth-of-type(2) {
-    stroke: var(--colorHead);
-    /* stroke:none; */
-    /* stroke: url(#imagePattern); */
-    stroke-linecap: round;
-    stroke-dasharray: 0.1 var(--stroke);
-    stroke-width: 1em;
-    z-index: var(--Head);
-}
-
-/* animatie lijn 2 */
-svg g:nth-of-type(2) polyline{
-    stroke: var(--colorLineYusuf);
-
-
-    /* Stroke-dasharray property */
-    stroke-dasharray: var(--stroke);
-    stroke-dashoffset: var(--stroke);
-    transform: translateX(0.6em) translateY(-0.6em);
-    z-index: var(--Line);
-}
-
-svg g:nth-of-type(2) polyline:nth-of-type(2) {
-    stroke: var(--colorHeadYusuf);
-    /* stroke: url(#imagePattern); */
-    /* fill-rule: nonzero; */
-    stroke-linecap: round;
-
-    stroke-dasharray: 0.1 var(--stroke);
-    stroke-width: 1em;
-    z-index: var(--Head);
-}
-
-/* animatie lijn 3 */
-svg g:nth-of-type(3) polyline {
-    stroke: var(--colorLineArthur);
-
-    /* Stroke-dasharray property */
-    stroke-dasharray: var(--stroke);
-    stroke-dashoffset:var(--stroke);
-    transform: translateX(0.4em) translateY(-0.4em);
-    z-index: var(--Line);
-}
-
-svg g:nth-of-type(3) polyline:nth-of-type(2) {
-    stroke: var(--colorHeadArthur);
-    stroke-linecap: round;
-
-    /* Stroke-dasharray property */
-    stroke-dasharray: 0.1 var(--stroke);
-    stroke-width: 1em;
-    z-index: var(--Head);
-}
-
-/* animatie lijn 4 */
-svg g:nth-of-type(4) polyline {
-    stroke: var(--colorLineEames);
-
-    /* Stroke-dasharray property */
-    stroke-dasharray: var(--stroke);
-    stroke-dashoffset:var(--stroke);
-    transform: translateX(0.2em) translateY(-0.2em);
-    z-index: var(--Line);
-}
-
-svg g:nth-of-type(4) polyline:nth-of-type(2){
-    stroke: var(--colorHeadEames);
-
-    /* Stroke-dasharray property */
-    stroke-dasharray: 0.1 var(--stroke);
-    stroke-width: 1em;
-    stroke-linecap: round;
-    z-index: var(--Head);
-}
-
-
+/* animatie lijnen */
 :has(#Start:checked) polyline {
     animation: moving 40s linear forwards infinite; 
-}
-
-:has(#Start:checked) article {
-    animation: cubeDraai 40s linear both infinite;
 }
 
 @keyframes moving {

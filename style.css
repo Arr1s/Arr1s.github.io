@@ -21,7 +21,7 @@ html {
     --shadowside-filter-left: brightness(90%);
 
     --background: linear-gradient(180deg, rgba(241,252,255,1) 0%, rgba(174,198,199,1) 50%, rgba(71,99,99,0.9990589985994398) 99%);
-
+}
 /***************************************************************
 These styles are subject to the license agreement(s) provided when you purchased the license(s).
 
@@ -186,7 +186,7 @@ p {
 }
 
 label {
-    margin-left: 10em;
+  justify-items: right;
 }
 
 
@@ -296,6 +296,9 @@ article {
     --color: yellow;
 
     top: 0;    
+    && h3 {
+        
+    }
   }
 
   /* tweede cube */
@@ -335,7 +338,6 @@ article {
     --color: blue;
     top: 105vw;
   } 
-}
 
 /* animatie cubes */
 :has(#Start:checked) article {

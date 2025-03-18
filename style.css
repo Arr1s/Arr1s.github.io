@@ -1,6 +1,6 @@
 * {
     transform-style: preserve-3d;
-    
+    interpolate-size: allow-keywords;
 }
 
 html {
@@ -192,16 +192,16 @@ label {
 
 
   
-  /* 3D basis van Lorenzo, height van Sanne, en grid, top en positioning van Nils */
-  article {
+/* 3D basis van Lorenzo, height van Sanne, en grid, top en positioning van Nils */
+article {
     position: absolute;
 
-      /* dimensions */
-      --width: 40vw;
-      --depth: 40vw;
-      --height: var(--block-height);
+    /* dimensions */
+    --width: 40vw;
+    --depth: 40vw;
+    --height: var(--block-height);
 
-      height: var(--block-height);
+    height: var(--block-height);
 
     display: grid;
     grid-template-columns: auto;
@@ -209,7 +209,15 @@ label {
     align-items: center;
     justify-items: center;
     transform-origin: 50% 50% calc(var(--depth) * -0.5);
-  
+    
+    & h2 {
+        font-family: "Inception";
+        /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+        display: flex;
+        flex-direction: column;
+        font-size: clamp(0.3em, 3cqi, 2em);
+        color: blue;
+    }
       > div {
           grid-column: 1;
           grid-row: 1;
@@ -372,6 +380,7 @@ article:nth-of-type(5) h3 {
     font-family:  "Kōsetsu Incised";
     font-size: clamp(0.3em, 2cqi, 2em);
 }
+
 
 
 

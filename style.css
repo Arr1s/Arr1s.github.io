@@ -14,6 +14,7 @@ html {
     --colorHeadArthur: crimson;
     --colorLineEames: lightgreen;
     --colorHeadEames: green;
+    --strokeWidthHead: 1em;
 
     --shadowside-filter-right: brightness(80%);
     --shadowside-filter-left: brightness(90%);

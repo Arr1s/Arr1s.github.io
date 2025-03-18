@@ -1,5 +1,6 @@
 * {
     transform-style: preserve-3d;
+    
 }
 
 html {
@@ -183,6 +184,13 @@ p {
     font-family: "HvDTrial";
     font-size: clamp(0.1em, 3cqi, 1em);
 }
+
+label {
+    margin-left: 10em;
+}
+
+
+
   
   /* 3D basis van Lorenzo, height van Sanne, en grid, top en positioning van Nils */
   article {
@@ -512,11 +520,54 @@ svg {
 
 
 
-footer {
-    position: relative;
-}
 
-footer ul {
+/* Footer/legenda */
+footer {
     position: fixed;
-    
+    top: 80vh;
+    left: 1vw;
+    & summary {
+        font-size: clamp(0.3em, 5cqi, 1.2em);
+        margin-bottom: 0;
+        font-family: "Inception";
+    }
+    & ul {
+
+        padding-inline-start: 1em;
+        margin-top: 0;
+    }
+    & li {
+        display: flex;
+        justify-content: space-between;
+        && div {
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            background-color: var(--colorHead);
+        }
+        &&:nth-of-type(2) div {
+            background-color: var(--colorHeadArthur);
+        }
+        &&:nth-of-type(3) div {
+            background-color: var(--colorHeadEames);
+        }
+        &&:nth-of-type(4) div {
+            background-color: var(--colorHeadYusuf);
+        }
+    }
+    & details {
+        overflow: hidden;
+        border: none;
+        &&::details-content {
+            block-size: 0;
+            transition: block-size 1s,
+            content-visibility 1s;;
+            transition-behavior: allow-discrete;   
+            font-size: clamp(0.1em, 2cqi, 0.8em); 
+            text-align: start;
+        }
+        &&[open]::details-content {
+            block-size: auto;
+        }      
+    }
 }

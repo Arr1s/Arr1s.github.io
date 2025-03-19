@@ -19,6 +19,7 @@ html {
 
     --shadowside-filter-right: brightness(80%);
     --shadowside-filter-left: brightness(90%);
+    --shadowside-filter-bottom: brightness(70%);
 
     --background: linear-gradient(180deg, rgba(241,252,255,1) 0%, rgba(174,198,199,1) 50%, rgba(71,99,99,0.9990589985994398) 99%);
 
@@ -188,8 +189,8 @@ img {
 }
 
 article:first-of-type > div:nth-of-type(4) img {
-    width: 70%;
-    margin-left: 15%
+    width: 60%;
+    margin-left: 20%
 }
 
 
@@ -287,6 +288,7 @@ article {
         position: absolute;
           width: var(--width);
           height: var(--depth);
+          filter: var(--shadowside-filter-bottom);
           transform: 
               translateY(calc(-1*var(--height)))
               translateZ(var(--depth))

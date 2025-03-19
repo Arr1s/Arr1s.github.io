@@ -77,7 +77,11 @@ Gefaald experiment om een pad aan een plaatje te koppelen
 De content is nu nog wel erg hektisch, ik zal een manier moeten vinden om A, de content gebaseerd op de lijnen nog responsive te houden, terwijl B, de content overzichtelijker wordt zodat het prettiger is om naar te kijken.
 
 ## Week 4
-Nesting, cuboid maken van content
+In week 4 heb ik gekeken naar de nesting van CSS elementen en deze meer doorgevoerd zodat ik mijn code ook een stuk kon opschonen. Echter, de grootste verandering was dat ik van de articles met de content allemaal een kubus heb gemaakt die rond draait met de content. Dit was een heel erg leuk idee van Sanne die erg hielp om de content A, wat makkelijker kwa ruimte te verdelen, en B op een leuke manier weer te geven, maar de uitvoering was toch iets lastiger, voornamelijk het dan ook nog eens responsive maken was extreem lastig en heb ik meerdere uren met Nils aan gezeten. 
+
+De basis van de code en uitleg heb ik van Lorenzo gekregen, daarna heb ik zelf de code zo geschreven zodat ik alle vlakken kon zien, en de animatie toegevoegd, dat werkte allemaal nog behoorlijk soepeltjes. Toen heeft Sanne me geholpen met de hoogtet bepalen en zorgen dat deze op zo'n manier kon schalen dat het responsive kon zijn. Daarna, toen ik bezig begon met afstand tussen de blokken bepalen, ging het wat mis. Hierna heb ik Nils er dus bij geroepen en hebben we meerdere malen gekeken naar waarom de code niet helemaal normaal leek te gedragen. Een gedeelte hiervan lag aan de manier waarop Lorenzo zijn code in elkaar had gezet, wat ervoor zorgde dat de kubus uit het "scherm niveau" wordt geduwd, wat ervoor zorgt dat er best veel distortion is, wat vervelend in de weg kwam te zitten bij het positioneren. 
+
+Daarbij heb ik de container queries verplaatst van het article, naar de popover met de button in het article. Ook heb ik in het algemeen extra content toegevoegd en de footer met een `detail` element erbij gedaan die animeert op in en uit klappen. 
 
 Nesting van CSS
 <img width="1470" alt="Screenshot 2025-03-17 at 11 39 42" src="https://github.com/user-attachments/assets/7b571b1c-10b7-4e85-963b-569dd3ac3782" />

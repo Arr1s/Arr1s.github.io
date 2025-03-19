@@ -1,6 +1,6 @@
 * {
-    transform-style: preserve-3d;
     interpolate-size: allow-keywords;
+    transform-style: preserve-3d;
 }
 
 html {
@@ -177,15 +177,20 @@ h1 {
 
 p {
     font-family: "HvDTrial";
-    font-size: clamp(0.1em, 3cqi, 1em);
+    font-size: clamp(0.01em, 2cqi, 1em);
 }
 
 label {
-  margin-left: 40vw;
+  margin-left: 40%;
 }
 
 img {
     max-width: 100%;
+}
+
+article:first-of-type > div:nth-of-type(4) img {
+    width: 70%;
+    margin-left: 15%
 }
 
 
@@ -215,9 +220,6 @@ article {
         flex-direction: column;
         font-size: clamp(0.3em, 3cqi, 2em);
     }
-    & button {
-        color: green;
-    }
       > div {
           grid-column: 1;
           grid-row: 1;
@@ -225,12 +227,17 @@ article {
           /* common style */
           box-sizing: border-box;
           background-color: var(--color, #fff);
-          padding: 0.5em 1em;
+          padding: 0.5rem 1rem;
           & p {
             margin: 0;
           }
           & h3:not(:nth-of-type(3)) {
             padding-bottom: 0.3em;
+          }
+          & button {
+            font-size: clamp(0.01em, 2cqi, 1em);
+            width: max-content;
+            height: min-content;
           }
       }
   
@@ -588,7 +595,7 @@ svg {
     :popover-open div:nth-of-type(1) {
         display: grid;
         grid-template-columns: 1fr 2fr 2fr;
-        grid-template-rows: 2.5fr 1fr;
+        grid-template-rows: 3fr 1fr;
         grid-template-areas: 
         "process summary summary"
         ". dream list";
@@ -603,8 +610,9 @@ svg {
 
 /* Footer/legenda */
 footer {
-    position: absolute;
+    position: fixed;
     top: 80vh;
+    bottom: 90vh;
     left: 1vw;
     & summary {
         font-size: clamp(0.3em, 5cqi, 1.2em);

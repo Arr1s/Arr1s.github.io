@@ -53,6 +53,40 @@ Perspective op de section gestopt, want zonder section kan je geen 3D transform 
 gridtemplate
 image proberen, pattern, image los, animateMotion, animateTransform,
 
+Fonts die toegevoegd zijn met Wakamai Fondue
+<img width="1470" alt="Screenshot 2025-03-10 at 15 15 51" src="https://github.com/user-attachments/assets/4566e403-c1d9-4c02-889a-0c4180879004" />
+
+Grid toevoegingen aan m'n articels en deze proberen responsive te maken, wat niet al te best ging tot ik container queries ging gebruiken
+<img width="1470" alt="Screenshot 2025-03-10 at 13 05 30" src="https://github.com/user-attachments/assets/454c7eaa-c144-46b3-8207-e8ba3561efa1" />
+<img width="1470" alt="Screenshot 2025-03-10 at 13 05 18" src="https://github.com/user-attachments/assets/b954fd6b-37f0-4f68-8a7e-5cca83dd5c67" />
+<img width="1470" alt="Screenshot 2025-03-10 at 13 05 37" src="https://github.com/user-attachments/assets/ab8a79d8-5e46-4d02-a455-a87830cc950d" />
+<img width="1470" alt="Screenshot 2025-03-10 at 15 16 14" src="https://github.com/user-attachments/assets/668f4e7c-2e6a-4145-bd65-a58cf3a6322a" />
+
+Container queries gebruiken met grid om het article wel responsive te maken met de gewenste layout
+<img width="1470" alt="Screenshot 2025-03-17 at 12 50 20" src="https://github.com/user-attachments/assets/bfeb48e9-8940-4621-8a11-91c5f8759898" />
+
+
+Gefaald experiment om een pad aan een plaatje te koppelen
+<img width="1470" alt="Screenshot 2025-03-17 at 11 14 45" src="https://github.com/user-attachments/assets/e65a9cc5-8cd2-404d-bead-98def48452b9" />
+![Poging image pad ](https://github.com/user-attachments/assets/5a8d655f-870c-42cc-948c-a28b5ab4ce90)
+![poging image pad 2](https://github.com/user-attachments/assets/9031b7a8-51c9-4010-8e2f-bd92526a3bf3)
+![poging alle image paden](https://github.com/user-attachments/assets/a54ab13a-c191-4bac-a295-2b75395d439d)
+
+
+### Conclusie
+De content is nu nog wel erg hektisch, ik zal een manier moeten vinden om A, de content gebaseerd op de lijnen nog responsive te houden, terwijl B, de content overzichtelijker wordt zodat het prettiger is om naar te kijken.
+
+## Week 4
+Nesting, cuboid maken van content
+
+Nesting van CSS
+<img width="1470" alt="Screenshot 2025-03-17 at 11 39 42" src="https://github.com/user-attachments/assets/7b571b1c-10b7-4e85-963b-569dd3ac3782" />
+<img width="1470" alt="Screenshot 2025-03-17 at 11 39 24" src="https://github.com/user-attachments/assets/7ca1a09e-80a2-4236-a207-148af1d8533e" />
+
+Experiment om 3D blokken te maken en deze te roteren met de content
+<img width="1470" alt="Screenshot 2025-03-18 at 11 55 20" src="https://github.com/user-attachments/assets/74087256-fd1b-437f-a0d2-edb142d88a84" />
+
+
 # Bronnen
 ## Inception
 * https://inception.fandom.com/wiki/City_(dream) 

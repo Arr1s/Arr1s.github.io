@@ -1,5 +1,9 @@
-* {
+/* html {
     interpolate-size: allow-keywords;
+   
+} */
+
+main, main * {
     transform-style: preserve-3d;
 }
 
@@ -175,6 +179,8 @@ h1 {
 }
 
 
+
+/* Losse HTML elementen */
 p {
     font-family: "HvDTrial";
     font-size: clamp(0.01em, 2cqi, 1em);
@@ -206,7 +212,6 @@ article {
     --height: var(--block-height);
 
     height: var(--block-height);
-
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -249,7 +254,6 @@ article {
           transform: translateZ(calc(-0.5 * var(--depth))) translateZ(calc(-0.5 * var(--depth)));
       }
       > div:nth-of-type(3) p, h3, button {
-  
         margin: 0;
         transform: rotateY(180deg);
       }
@@ -271,14 +275,12 @@ article {
       > div:nth-of-type(4) {
           width: var(--depth);
           height: var(--height);
-          
               transform: translateZ(calc(-0.5 * var(--depth))) rotateY(-90deg) translateZ(calc(0.5 * var(--width)));
       }
   
       /* right-side */
       > div:nth-of-type(2) {
           filter: var(--shadowside-filter-right);
-
           transform: translateZ(calc(-0.5 * var(--depth))) rotateY(90deg) translateZ(calc(0.5 * var(--width)));
       }
   
@@ -310,7 +312,6 @@ article {
   /* eerste cube */
   &:nth-of-type(1) {
     --block-height: calc( (100dvw - 2rem) * .13 );
-    
     --color: yellow;
     top: 0;    
     & h3 {
@@ -326,7 +327,6 @@ article {
   /* tweede cube */
   article:nth-of-type(2) {
     --block-height: calc( (100dvw - 2rem) * .2 );
-    
     --color: brown;
     top: 15vw;
     & h3 {
@@ -341,7 +341,6 @@ article {
   /* derde cube */
   article:nth-of-type(3) {
     --block-height: calc( (100dvw - 2rem) * .27 );
-
     --color: green;
     top: 38vw;
     & h3 {
@@ -356,7 +355,6 @@ article {
   /* vierde cube */
   article:nth-of-type(4) {
     --block-height: calc( (100dvw - 2rem) * .31 );
-
     --color: red;
     top: 68vw;
     & h3 {
@@ -371,7 +369,6 @@ article {
   /* vijfde cube */
   article:nth-of-type(5) {
     --block-height: calc( (100dvw - 2rem) * .23);
-
     --color: blue;
     top: 105vw;
     & h3 {
@@ -386,6 +383,7 @@ article {
 :has(#Start:checked) article {
     animation: cubeDraai var(--animationTime) linear forwards infinite; 
 }
+
 @keyframes cubeDraai {
     0%, 100% {
       transform: rotateY(-0deg);
